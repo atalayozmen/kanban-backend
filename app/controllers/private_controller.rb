@@ -1,5 +1,8 @@
 # frozen_string_literal: true
+require 'uri'
+require 'net/http'
 class PrivateController < ApplicationController
+  include Secured
   before_action :authorize
 
   def private
