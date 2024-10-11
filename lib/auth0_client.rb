@@ -1,5 +1,4 @@
 # frozen_string_literal: true
-
 require 'jwt'
 require 'net/http'
 
@@ -19,7 +18,7 @@ class Auth0Client
 
   # Helper Functions
   def self.domain_url
-    "https://#{Rails.configuration.auth0.domain}/"
+    "https://#{Rails.configuration.auth0[:callback_url]}/"
   end
 
   def self.decode_token(token, jwks_hash)
@@ -27,7 +26,7 @@ class Auth0Client
       algorithm: 'RS256',
       iss: domain_url,
       verify_iss: true,
-      aud: Rails.configuration.auth0.audience,
+      aud: Rails.configuration.auth0[:audience],
       verify_aud: true,
       jwks: { keys: jwks_hash[:keys] }
     })
