@@ -9,7 +9,7 @@ class PublicController < ApplicationController
   def login
     # Return the access token to the client if credentials are correct
 
-    url = URI("https://#{Rails.configuration.auth0[:callback_url]}/oauth/token")
+    url = URI("https://#{Rails.configuration.auth0[:domain]}/oauth/token")
 
     http = Net::HTTP.new(url.host, url.port)
     http.use_ssl = true
