@@ -1,7 +1,7 @@
 # Kanban Board Backend
 
 This project will be the backend of the previous Kanban board project, which only consisted of the React frontend.
-Auth0 flow for the 'Backend for Frontend Pattern' will be used. A helpful blog post can be found here: https://auth0.com/blog/the-backend-for-frontend-pattern-bff/
+I followed this guide for the auth setup: [Guide](https://developer.auth0.com/resources/guides/spa/react/basic-authentication?_gl=1*3mrhpx*_gcl_au*MTA2MTk1MTkyNS4xNzI4NjQ1Nzcy*_ga*MTIwNDIzOTMwNy4xNzI4NjQ1Nzgy*_ga_QKMSDV5369*MTcyODg5OTY1My44LjEuMTcyODkwMTgwOS40MS4wLjA.#quick-react-setup)
 
 Setting up the Auth:
 
