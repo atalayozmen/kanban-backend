@@ -16,6 +16,8 @@ gem "puma", "~> 5.0"
 
 gem 'dotenv-rails'
 
+gem 'rack-cors'
+
 # Build JSON APIs with ease [https://github.com/rails/jbuilder]
 # gem "jbuilder"
 
